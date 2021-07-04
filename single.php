@@ -15,8 +15,8 @@
 
 
     <div class="clear"></div>
-    <p class="player"> <img src="aw.jpeg"><input id="playerp1" value="0" disabled="disabled"></p>
-    <p class="player2"><img src="mr.jpeg"><input id="playerp2" value="0" disabled="disabled"></p>
+    <p class="player"> <img src="https://ahrbastion.github.io/phptest/AW.jpeg"><input id="playerp1" value="0" disabled="disabled"></p>
+    <p class="player2"><img src="https://ahrbastion.github.io/phptest/MR.jpeg"><input id="playerp2" value="0" disabled="disabled"></p>
     <div style="clear:both;"></div>
     <button id="Colorr" class="p1" onclick="recall()" style="width:90px;height:60px;margin:5px;display:inline-block;"></button>
     <button onclick="clearDiv()" id="currentTime" style="background:white;width:90px;height:60px;margin:5px;display:inline-block;float:right;">Clear</button>
