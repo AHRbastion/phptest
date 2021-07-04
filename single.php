@@ -1,17 +1,141 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>AHR TicTac</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+<title>AHR TikTak</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+.main { 
+background:black;
+border:5px solid rgba(80,180,80,0.9);
+display:grid;
+width:300px;
+height:300px;
+margin:5px auto;
+grid-template-columns:100px 100px 100px;
+grid-template-rows:100px 100px 100px ;
+}
+.sub{
+background:#fff;
+border:1px solid #ccc;
+box-shadow:inset 0 0 20px #000;
+}
+.aw{
+background:url("https://ahrbastion.github.io/phptest/AW.jpeg");
+background-size:140%;
+background-position:center;
+background-attachment:cover;
+background-repeat:no-repeat;
+}
+.mr{
+background:url("https://ahrbastion.github.io/phptest/MR.jpeg");
+background-size:140%;
+background-position:center;
+background-attachment:cover;
+background-repeat:no-repeat;
+}
+#colorlist{
+width:200px;
+height:30px;
+padding:0;
+margin:6px auto;
+display:block;
+border:1px solid rgba(80,180,80,0.9);
+background:white;
+}
+h1{
+text-align:center;
+font-family:Arial,sans-serif;
+display:block;
+padding:8px;
+background:rgba(80,180,80,0.9);
+color:white;
+margin-bottom:6px;
+}
+button:hover{
+box-shadow:inset 0 0 20px yellow;
+}
+#win{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(0.5);
+font-size:25px;
+width:100%;
+text-align:center;
+background:rgba(80,180,80,0.9);
+height:50px;
+padding:20px;
+vertical-align:center;
+color:#fff;
+font-weight:700;
+transform-origin:center;
+transition:0.4s;
+display:none;
+}
+.player {
+display:inline-block;
+float:left;
+padding:5px;
+background:#ddd;
+color:black;
+width:80px;
+border:1px solid #ccc;
+border-radius:0 6px 6px 0;
+}
+.player2{
+display:inline-block;
+float:right;
+padding:5px;
+background:#ddd;
+color:black;
+width:80px;
+border:1px solid #ccc;
+border-radius:6px 0 0 6px;
+}
+.player img{
+width:35px;
+border-radius:50px;
+height:30px;
+}
+.player2 img{
+width:35px;
+border-radius:50px;
+height:30px;
+}
+#playerAw {
+padding:5px;
+font-size:20px;
+width:25px;
+background:none;
+border:none;
+outline:none;
+}
+#playerMr {
+padding:5px;
+font-size:20px;
+width:25px;
+background:none;
+border:none;
+outline:none;
+}
+.computer {
+text-align:center;
+padding:8px;
+margin:10px;
+background:rgba(80,180,80,0.9);
+color:white;
+border-top:1px solid #ccc;
+border-radius:0 0 6px 6px;
+}
+</style>
 </head>
-
 <body>
-    <a href="index.php">
-        <h1 class="th1">AHR Game</h1>
-    </a>
+<h1>AHR Game</h1>
 
 <p class="player" > <img src="https://ahrbastion.github.io/phptest/AW.jpeg" ><input id="playerAw" value="0" disabled="disabled"  ></p>
 <p class="player2" ><img src="https://ahrbastion.github.io/phptest/MR.jpeg" ><input id="playerMr"  value="0" disabled="disabled"  ></p>
