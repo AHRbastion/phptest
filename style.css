@@ -45,7 +45,7 @@ a {
 }
 
 .p2 {
-    background: url("https://ahrbastion.github.io/phptest/MR.jpeg");
+    background: url("https://ahrbastion.github.io/phptest/AW.jpeg");
     background-size: 140%;
     background-position: center;
     background-attachment: cover;
@@ -211,4 +211,18 @@ form input{
     cursor: pointer;
     outline: none;
     border: none;
+}
+.aw{
+background:url("https://ahrbastion.github.io/phptest/AW.jpeg");
+background-size:140%;
+background-position:center;
+background-attachment:cover;
+background-repeat:no-repeat;
+}
+.mr{
+background:url("https://ahrbastion.github.io/phptest/MR.jpeg");
+background-size:140%;
+background-position:center;
+background-attachment:cover;
+background-repeat:no-repeat;
 }
