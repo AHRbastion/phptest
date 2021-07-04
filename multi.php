@@ -149,7 +149,7 @@ if (!isset($_REQUEST["roomno"])) {
                     }
            
 
-        }, 600);
+        }, 800);
 
         function clearDiv() {
             win.style.display = "none";
