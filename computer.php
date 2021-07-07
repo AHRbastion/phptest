@@ -214,13 +214,8 @@ recall();
 
 }
 
-p1= prompt("Player 1 Name");
-p2=prompt("Player 2 Name");
-if(p1==null){
-p1="Player 1";
-}if(p2==null){
-p2="Player 2";
-}
+p1= "You";
+p2="Computer";
 
 function winner(winner){
 winmusic.play();
